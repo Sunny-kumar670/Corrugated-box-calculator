@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Rate Calculator</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-title">Corrugated Box Rate Calculator</div>
+  </nav>
+
+  <!-- Header Image -->
+  <div class="header-image">
+    <img src="box image.png" alt="Corrugated Box" style="width:50%%; max-height:300px; object-fit:cover;">
+  </div>
+
+  <div class="container" style="display: flex; gap: 40px; flex-wrap: wrap;">
+    <div style="flex: 1;">
+      <h1>Box Rate Calculator</h1>
+      <form id="rateForm">
+        <label>Length: <input type="number" id="length" required></label>
+        <label>Width: <input type="number" id="width" required></label>
+        <label>Height: <input type="number" id="height" required></label>
+        <label>Paper Type: 
+          <select id="paperType">
+            <option value="Normal">Normal</option>
+            <option value="Kraft">Kraft</option>
+          </select>
+        </label>
+        <label>Flute Type: 
+          <select id="fluteType">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+          </select>
+        </label>
+        <label>Quantity: <input type="number" id="quantity" required></label>
+        <button type="button" onclick="calculate()">Calculate Cost</button>
+      </form>
+      <div id="result">Total Cost: ₹0</div>
+    </div>
+
+    <!-- Image beside form -->
+    <div style="flex: 1; text-align: center;">
+      <img src="images/sample-box.jpg" alt="Sample Corrugated Box" style="max-width:100%; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    </div>
+  </div>
+
+  <script src="script3.js"></script>
+</body>
+</html>
